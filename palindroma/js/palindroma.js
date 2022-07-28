@@ -1,13 +1,13 @@
 
-const word = prompt('Inserisci una parola')
-
+let myword = prompt('Inserisci una parola')
+myword = myword.toLowerCase()
 function palindroma(){
-    let wordArray = word.split("")
+    let wordArray = myword.split("")
     let reverseArray = wordArray.reverse()
     return reverseArray.join('')
 }
 
-if(word == palindroma()){
+if(myword == palindroma()){
     console.log('la parola è palindroma');
   } else {
     console.log('la parola NON è palindroma');
